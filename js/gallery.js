@@ -113,15 +113,5 @@ function openModal(imageUrl) {
     instance.show();
 }
 
-document.querySelectorAll('.gallery-item').forEach(item => {
-    item.addEventListener('click', event => {
-        event.preventDefault(); // Забороняємо стандартну дію по кліку (наприклад, перехід за посиланням)
 
-        // Отримуємо посилання на велике зображення з дата-атрибуту
-        const imageSrc = event.currentTarget.querySelector('.gallery-image').getAttribute('data-source');
-        
-        // Відкриваємо модальне вікно з великим зображенням
-        openModal(imageSrc);
-    });
-});
 
