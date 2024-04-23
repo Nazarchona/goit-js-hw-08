@@ -85,15 +85,6 @@ galleryContainer.innerHTML = galleryMarkup;
 
 galleryContainer.addEventListener('click', onGalleryItemClick);
 
-function onGalleryItemClick(event) {
-    event.preventDefault(); 
-
-    if (event.target.classList.contains('gallery-image')) {
-        const largeImageUrl = event.target.dataset.source;
-
-        console.log('Клікнуто на зображенні:', largeImageUrl);
-    }
-}
 
 function onGalleryItemClick(event) {
     event.preventDefault(); 
